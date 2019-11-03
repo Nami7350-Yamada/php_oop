@@ -73,7 +73,7 @@ $task):?>
         <a class="text-success" href="edit.php?id=<?php echo h($task['id']); ?>"><i class="fas fa-bus"></i></a>
     </td>
     <td>
-        <a class="text-danger" href="delete.php?id=<?php echo h($task['id']); ?>"><i class="fas fa-bus"></i></a>
+        <a class="text-danger" href="delete.php?id=<?php echo h($task['id']); ?>">DELETE</i></a>
     </td>
   </tr>
   <?php endforeach; ?>
@@ -82,7 +82,6 @@ $task):?>
 </section>
 
 </main>
-
 
 </body>
 </html>
