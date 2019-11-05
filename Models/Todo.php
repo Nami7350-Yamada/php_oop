@@ -17,7 +17,13 @@ class Todo
     {
         $stmt = $this->db_manager->dbh->prepare('INSERT INTO '.$this->table.' (name) VALUES (?)');
         $stmt->execute([$name]);
+
+        // 最新のタスクIDを返す
+        $latestId = $this->db_manager->dbh->lastInsertId();
+        return $latestId;
     }
+
+    //   一覧を呼び出すためのメソッド
     public function all()
     {
         $stmt = $this->db_manager->dbh->prepare('SELECT * FROM '.$this->table);
