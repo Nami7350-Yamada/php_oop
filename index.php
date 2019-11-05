@@ -37,7 +37,7 @@
         <a href="index.php" class="navbar-brand"><h1>TODO LIST</h1></a>
         <div class="justify-content-end">
             <div class="text-light">
-                Namiko Yamada
+                Seedkun
 </div>
         </div>
     </nav>
